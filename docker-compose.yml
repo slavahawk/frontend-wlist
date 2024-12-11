@@ -1,8 +1,9 @@
 services:
   nuxt-builder:
+    image: node:lts
     container_name: w-list-container
-    restart: always
-    build:
-      context: .
-    ports:
-      - "3000:3000"
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app # Монтируем текущую директорию в контейнер
+    command: sh -c "npm install && npm run generate" # Устанавливаем зависимости и запускаем сборку приложения
+    restart: "no" # Не перезапускаем после завершения сборки
