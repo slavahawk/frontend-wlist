@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   nuxt-builder:
-    image: w-list-image
     container_name: w-list-container
     restart: always
     build:
