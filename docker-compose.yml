@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  frontend-w-list:
-    container_name: frontend-w-list-container
+  nuxt-build-landing:
+    container_name: nuxt-build-landing
     restart: always
     build:
       context: .
