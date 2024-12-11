@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   nuxt-builder:
     container_name: w-list-container
