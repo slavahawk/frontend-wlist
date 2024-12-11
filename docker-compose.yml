@@ -1,7 +1,8 @@
 version: '3.8'
 services:
-  nuxt-build-landing:
-    container_name: nuxt-build-landing
+  nuxt-builder:
+    image: w-list-image
+    container_name: w-list-container
     restart: always
     build:
       context: .
