@@ -1,14 +1,9 @@
 version: '3.8'
-
 services:
-  frontend-wlist:
+  frontend-w-list:
+    container_name: frontend-w-list-container
+    restart: always
     build:
       context: .
-      dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    environment:
-      NODE_ENV: production
-    volumes:
-      - .:/app
-    command: node .output/server/index.mjs
