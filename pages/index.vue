@@ -30,6 +30,7 @@ const showDialog = ref(true);
 const requestDemo = () => {
   // Логика для запроса демо-версии
   alert("Запрос демо-версии отправлен!");
+  window.open('https://admin.w-list.ru');
 };
 </script>
 
