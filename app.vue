@@ -1,7 +1,12 @@
 <template>
+  <Header/>
+  <Nav/>
   <NuxtPage />
 </template>
 <script setup lang="ts">
+
+import Header from "~/components/Header.vue";
+import Nav from "~/components/Nav.vue"
 
 useSeoMeta({
   title: 'W-List - Винная карта',

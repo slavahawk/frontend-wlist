@@ -1,4 +1,6 @@
 <template>
+  <Banner/>
+  <Banner2/>
   <div class="landing-page">
     <Dialog v-model:visible="showDialog" modal header="Подтверждение">
       <template #footer>
@@ -24,8 +26,9 @@
 <script setup lang="ts">
 import {ref} from 'vue';
 import Logo from "~/components/svg/Logo.vue";
-
-const showDialog = ref(true);
+import Banner from "~/components/Banner.vue";
+import Banner2 from "~/components/Banner2.vue";
+const showDialog = ref(false);
 
 const requestDemo = () => {
   // Логика для запроса демо-версии
