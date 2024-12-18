@@ -14,10 +14,7 @@
         Узнай о возможностях интерактивных винных карт W-List
       </p>
       <video controls>
-        <source
-          src="https://www.youtube.com/watch?v=uVoX_jVnDS4&t=1s&ab_channel=SOBOLEV"
-          type="video/mp4"
-        />
+        <source src="https://youtu.be/uVoX_jVnDS4" type="video/mp4" />
       </video>
     </div>
   </div>
