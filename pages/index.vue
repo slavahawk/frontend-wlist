@@ -1,6 +1,6 @@
 <template>
-  <Banner/>
-  <Banner2/>
+  <Banner id="banner"/>
+  <Banner2 id="banner2"/>
   <div class="landing-page">
     <Dialog v-model:visible="showDialog" modal header="Подтверждение">
       <template #footer>

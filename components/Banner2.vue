@@ -1,27 +1,35 @@
 <template>
-  <div class="h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-    <div class="text-center p-5 bg-white rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold mb-4">
+  <div class="bg-white">
+    <div
+      class="text-center pt-16 pb-16 animate-duration-1000 text-black"
+      v-animateonscroll="{
+        enterClass: 'animate-fadein',
+        leaveClass: 'animate-fadeout',
+      }"
+    >
+      <h1 class="text-2xl font-bold mb-4">
         Как W-List может помочь вашему бизнесу?
       </h1>
-      <p class="text-lg mb-6">
+      <p class="text-l mb-6">
         Узнай о возможностях интерактивных винных карт W-List
       </p>
-      <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          target="_blank"
-          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200"
-      >
-        Посмотреть видео
-      </a>
+      <video controls>
+        <source
+          src="https://www.youtube.com/watch?v=uVoX_jVnDS4&t=1s&ab_channel=SOBOLEV"
+          type="video/mp4"
+        />
+      </video>
     </div>
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped>
+video {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
 /* Дополнительные стили, если нужно */
 </style>
