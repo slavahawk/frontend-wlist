@@ -13,9 +13,14 @@
       <p class="text-l mb-6">
         Узнай о возможностях интерактивных винных карт W-List
       </p>
-      <video controls>
-        <source src="https://youtu.be/uVoX_jVnDS4" type="video/mp4" />
-      </video>
+      <iframe
+        src="https://www.youtube.com/embed/uVoX_jVnDS4"
+        title="ДЕБАТЫ. СОБОЛЕВ vs. МАРКАРЯН: женщины, свобода воли, смысл жизни, секта в XXI веке"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
 </template>
@@ -23,9 +28,10 @@
 <script></script>
 
 <style scoped>
-video {
+iframe {
   width: 100%;
   max-width: 768px;
+  min-height: 500px;
   margin: 0 auto;
 }
 /* Дополнительные стили, если нужно */
