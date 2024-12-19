@@ -68,14 +68,14 @@ export default defineNuxtConfig({
     },
     autoImport: true,
   },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: "modern-compiler", // or "modern", "legacy"
-          // silenceDeprecations: ["legacy-js-api"]
-        },
-      },
-    },
-  },
+  // vite: {
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         api: "modern-compiler", // or "modern", "legacy"
+  //         // silenceDeprecations: ["legacy-js-api"]
+  //       },
+  //     },
+  //   },
+  // },
 });
