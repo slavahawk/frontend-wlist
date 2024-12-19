@@ -53,7 +53,7 @@ const Noir = definePreset(Aura, {
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
+  modules: ["@primevue/nuxt-module", "@nuxtjs/tailwindcss"],
   css: ["~/assets/main.scss"],
   primevue: {
     options: {
