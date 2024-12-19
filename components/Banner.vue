@@ -1,18 +1,21 @@
 <template>
   <div
-    :style="{ backgroundImage: `url(${MainBanner})` }"
-    class="flex items-center h-screen banner mt-4"
+    :style="{
+      backgroundImage: `url(${MainBanner})`,
+      padding: 'var(--p-menubar-padding)',
+    }"
+    class="flex items-center banner"
   >
-    <div class="textBanner">
+    <div class="textBanner max-w-7xl ml-auto mr-auto w-full">
       <div class="text-left">
-        <h1 class="font-bold mb-4 text-white">
+        <h1 class="mb-4 text-white drop-shadow-xl">
           Увеличим продажи вина в ресторане или винном бутике минимум на 25%
         </h1>
-        <p class="mb-6 text-white">
+        <p class="mb-6 text-white drop-shadow-xl">
           c помощью интерактивной винной карты W-List, которая сделает выбор
           вина для гостя понятным и удобным
         </p>
-        <Button label="Заказать онлайн консультацию" />
+        <Button size="large" label="Заказать онлайн консультацию" />
       </div>
     </div>
   </div>
@@ -29,12 +32,17 @@ import MainBanner from "../assets/img/main.banner.jpg";
   background-position: center center;
   background-size: cover;
   position: relative;
+  min-height: calc(100vh - 62px);
 }
 
-.textBanner {
-  max-width: 960px;
-  margin: 0 auto;
+.banner:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .textBanner div {

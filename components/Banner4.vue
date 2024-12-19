@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="pt-16 pb-16 max-w-7xl ml-auto mr-auto flex justify-between items-center gap-12"
+      class="pt-16 pl-4 pr-4 pb-16 max-w-7xl ml-auto mr-auto flex justify-between items-center gap-4 flex-wrap"
     >
       <div class="max-w-xl">
-        <h2>Интерактивная винная карта на планшете – замена бумажного меню</h2>
+        <h3>Интерактивная винная карта на планшете – замена бумажного меню</h3>
         <hr />
         <p>
           Интерактивная винная карта полностью заменяет бумажный носитель. Она

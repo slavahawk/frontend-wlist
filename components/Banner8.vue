@@ -1,11 +1,11 @@
 <template>
-  <div class="pt-16 pb-16 max-w-7xl ml-auto mr-auto">
+  <div class="pt-16 pl-4 pr-4 pb-16 max-w-7xl ml-auto mr-auto">
     <h2 class="text-center">
       Интерактивные винные карты нового поколения Winechef
     </h2>
     <h3 class="text-center">можно использовать для разных типов бизнеса</h3>
-    <div class="flex gap-4">
-      <div>
+    <div class="flex gap-4 flex-wrap justify-between">
+      <div class="max-w-72 ml-auto mr-auto">
         <img src="~/assets/img/rest1.svg" alt="" />
         <h3>Ресторанам</h3>
         <p>
@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="max-w-72 ml-auto mr-auto">
         <img src="~/assets/img/rest1.svg" alt="" />
         <h3>Отелям</h3>
         <p>
@@ -23,7 +23,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="max-w-72 ml-auto mr-auto">
         <img src="~/assets/img/rest1.svg" alt="" />
         <h3>Круизным лайнерам</h3>
         <p>
@@ -32,7 +32,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="max-w-72 ml-auto mr-auto">
         <img src="~/assets/img/rest1.svg" alt="" />
         <h3>Алкогольным бутикам</h3>
         <p>

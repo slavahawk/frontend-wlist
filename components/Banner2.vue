@@ -5,7 +5,7 @@
     <!--    leaveClass: 'animate-fadeout',-->
     <!--    }"-->
     <div class="text-center pt-16 pb-16 animate-duration-1000">
-      <h2 class="font-bold mb-4">Как W-List может помочь вашему бизнесу?</h2>
+      <h3 class="font-bold mb-4">Как W-List может помочь вашему бизнесу?</h3>
       <p class="text-l mb-6">
         Узнай о возможностях интерактивных винных карт W-List
       </p>
@@ -21,7 +21,18 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import MainBanner from "assets/img/main.banner.jpg";
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  computed: {
+    MainBanner() {
+      return MainBanner;
+    },
+  },
+});
+</script>
 
 <style scoped>
 iframe {

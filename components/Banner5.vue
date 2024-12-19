@@ -1,13 +1,13 @@
 <template>
   <div class="bg-white">
     <div
-      class="pt-16 pb-16 max-w-7xl ml-auto mr-auto flex justify-between items-center gap-12"
+      class="pt-16 pl-4 pr-4 pb-16 max-w-7xl ml-auto mr-auto flex justify-between items-center flex-wrap gap-4"
     >
-      <div>
+      <div class="max-w-xl mx-auto">
         <img src="~/assets/img/banner4.png" alt="" />
       </div>
-      <div class="max-w-xl">
-        <h2>Универсальное cредство дистанционной коммуникации</h2>
+      <div class="max-w-xl mx-auto">
+        <h3>Универсальное cредство дистанционной коммуникации</h3>
         <hr />
         <p>
           Позаботитесь о госте на всех этапах, предоставляя качественный сервис

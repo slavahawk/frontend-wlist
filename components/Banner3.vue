@@ -1,10 +1,10 @@
 <template>
   <div class="bg-white">
     <div class="text-center pt-16 pb-16 max-w-7xl ml-auto mr-auto">
-      <h2>
+      <h3 class="max-w-3xl ml-auto mr-auto">
         Уже более 30 ресторанов и винных бутиков по всей России увеличили
         продажи вина, благодаря W-List
-      </h2>
+      </h3>
       <Carousel
         :value="rests"
         :numVisible="5"
