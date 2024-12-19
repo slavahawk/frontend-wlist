@@ -1,15 +1,11 @@
 <template>
-  <div class="bg-white">
-    <div
-      class="text-center pt-16 pb-16 animate-duration-1000 text-black"
-      v-animateonscroll="{
-        enterClass: 'animate-fadein',
-        leaveClass: 'animate-fadeout',
-      }"
-    >
-      <h1 class="text-2xl font-bold mb-4">
-        Как W-List может помочь вашему бизнесу?
-      </h1>
+  <div class="">
+    <!--    v-animateonscroll="{-->
+    <!--    enterClass: 'animate-fadein',-->
+    <!--    leaveClass: 'animate-fadeout',-->
+    <!--    }"-->
+    <div class="text-center pt-16 pb-16 animate-duration-1000">
+      <h2 class="font-bold mb-4">Как W-List может помочь вашему бизнесу?</h2>
       <p class="text-l mb-6">
         Узнай о возможностях интерактивных винных карт W-List
       </p>

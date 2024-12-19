@@ -1,21 +1,15 @@
 <template>
   <div
     :style="{ backgroundImage: `url(${MainBanner})` }"
-    class="flex items-center h-screen banner"
+    class="flex items-center h-screen banner mt-4"
   >
-    <div
-      v-animateonscroll="{
-        enterClass: 'animate-fadein',
-        leaveClass: 'animate-fadeout',
-      }"
-      class="textBanner"
-    >
+    <div class="textBanner">
       <div class="text-left">
-        <h1 class="text-3xl font-bold text-white mb-4">
+        <h1 class="font-bold mb-4 text-white">
           Увеличим продажи вина в ресторане или винном бутике минимум на 25%
         </h1>
-        <p class="text-white mb-6 text-l">
-          c помощью интерактивной винной карты Winechef, которая сделает выбор
+        <p class="mb-6 text-white">
+          c помощью интерактивной винной карты W-List, которая сделает выбор
           вина для гостя понятным и удобным
         </p>
         <Button label="Заказать онлайн консультацию" />
@@ -35,7 +29,6 @@ import MainBanner from "../assets/img/main.banner.jpg";
   background-position: center center;
   background-size: cover;
   position: relative;
-  margin: 100px 0 0 0;
 }
 
 .textBanner {
