@@ -17,7 +17,7 @@
         </p>
       </div>
       <div>
-        <nuxt-img src="/img/banner3.webp" alt="" />
+        <img src="~/assets/img/banner3.webp" alt="" />
       </div>
     </div>
   </div>

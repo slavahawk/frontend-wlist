@@ -4,7 +4,7 @@
       class="pt-16 pl-4 pr-4 pb-16 max-w-7xl ml-auto mr-auto flex justify-between items-center flex-wrap gap-4"
     >
       <div class="max-w-xl mx-auto">
-        <nuxt-img src="/img/banner4.png" alt="" />
+        <img src="~/assets/img/banner4.png" alt="" />
       </div>
       <div class="max-w-xl mx-auto">
         <h3>Универсальное cредство дистанционной коммуникации</h3>

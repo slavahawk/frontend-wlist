@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import MainBanner from "/img/main.banner.jpg";
+import MainBanner from "~/assets/img/main.banner.jpg";
 </script>
 
 <style scoped>
