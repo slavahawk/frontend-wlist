@@ -12,11 +12,14 @@
         :responsiveOptions="responsiveOptions"
       >
         <template #item="slotProps">
-          <nuxt-img
-            class="border-1 surface-border border-round m-2 p-3 block"
-            src="/img/01.jpg"
-            alt="img"
-          />
+          <ClientOnly>
+            <nuxt-img
+              class="border-1 surface-border border-round m-2 p-3 block"
+              src="/img/01.jpg"
+              format="jpg"
+              alt="img"
+            />
+          </ClientOnly>
         </template>
       </Carousel>
     </div>
