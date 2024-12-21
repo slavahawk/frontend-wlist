@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import Bg from "assets/img/bg-call.png";
+import Bg from "public/img/bg-call.png";
 </script>
 
 <style scoped>

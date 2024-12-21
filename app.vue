@@ -2,6 +2,7 @@
   <div class="layout-wrapper">
     <Header />
     <NuxtPage />
+    <Footer />
   </div>
 </template>
 <script setup lang="ts">

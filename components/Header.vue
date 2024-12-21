@@ -1,5 +1,5 @@
 <template>
-  <Menubar :model="items">
+  <Menubar :model="menu">
     <template #start>
       <router-link to="/" class="logo flex gap-4 items-center">
         <Logo class="w-6 ml-auto mr-auto" />
@@ -11,7 +11,7 @@
         v-ripple
         class="flex items-center"
         v-bind="props.action"
-        :href="item.href"
+        :href="`#${item.hash}`"
       >
         <span>{{ item.label }}</span>
       </a>
@@ -27,6 +27,7 @@
 
 <script setup lang="ts">
 import Logo from "~/components/svg/Logo.vue";
+import { menu } from "~/db/menu";
 
 const login = () => {
   window.open("https://admin.w-list.ru/auth/login");
@@ -34,33 +35,6 @@ const login = () => {
 const register = () => {
   window.open("https://admin.w-list.ru/auth/reg");
 };
-
-const items = ref([
-  {
-    label: "О Продукте",
-    href: "/#banner",
-  },
-  {
-    label: "Партнеры",
-    href: "/#banner",
-  },
-  {
-    label: "Как это работает",
-    href: "/#banner",
-  },
-  {
-    label: "Преимущества",
-    href: "/#banner",
-  },
-  {
-    label: "Индустрии",
-    href: "/#banner",
-  },
-  {
-    label: "Тарифы",
-    href: "/#banner",
-  },
-]);
 </script>
 
 <style scoped></style>

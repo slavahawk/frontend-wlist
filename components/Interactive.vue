@@ -6,7 +6,7 @@
     <h3 class="text-center">можно использовать для разных типов бизнеса</h3>
     <div class="flex gap-4 flex-wrap justify-between">
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <nuxt-img src="img/rest1.svg" alt="" />
         <h3>Ресторанам</h3>
         <p>
           сделать выбор вина максимально понятным, а значит комфортным.
@@ -15,7 +15,7 @@
       </div>
 
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <nuxt-img src="img/rest1.svg" alt="" />
         <h3>Отелям</h3>
         <p>
           W-List - незаменимый инструмент для отельера, в отличие от обычного
@@ -24,7 +24,7 @@
       </div>
 
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <nuxt-img src="img/rest1.svg" alt="" />
         <h3>Круизным лайнерам</h3>
         <p>
           интерактивная винная карта порекомендует блюда к напиткам и обслужит
@@ -33,7 +33,7 @@
       </div>
 
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <nuxt-img src="img/rest1.svg" alt="" />
         <h3>Алкогольным бутикам</h3>
         <p>
           W-List облегчит жизнь кавистам, став прекрасным инструментом

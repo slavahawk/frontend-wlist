@@ -3,7 +3,7 @@
     <h2 class="text-center">Как это работает?</h2>
     <div class="flex justify-between items-center gap-4 text-center flex-wrap">
       <div class="max-w-96 ml-auto mr-auto">
-        <img src="~/assets/img/step1.svg" alt="" />
+        <nuxt-img src="img/step1.svg" alt="" />
         <div class="mt-2">1</div>
         <h3>Создайте винную карту в личном кабинете</h3>
         <div>
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="max-w-96 ml-auto mr-auto">
-        <img src="~/assets/img/step2.svg" alt="" />
+        <nuxt-img src="img/step2.svg" alt="" />
         <div class="mt-2">2</div>
         <h3>Скачайте приложение в Google Play Market</h3>
         <div>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="max-w-96 ml-auto mr-auto">
-        <img src="~/assets/img/step3.svg" alt="" />
+        <nuxt-img src="img/step3.svg" alt="" />
         <div class="mt-2">3</div>
         <h3>Продавайте больше</h3>
         <div>

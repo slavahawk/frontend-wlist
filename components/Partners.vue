@@ -12,9 +12,9 @@
         :responsiveOptions="responsiveOptions"
       >
         <template #item="slotProps">
-          <img
+          <nuxt-img
             class="border-1 surface-border border-round m-2 p-3 block"
-            src="~/assets/img/01.jpg"
+            src="img/01.jpg"
             alt="img"
           />
         </template>

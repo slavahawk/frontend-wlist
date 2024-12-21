@@ -21,18 +21,7 @@
   </div>
 </template>
 
-<script>
-import MainBanner from "assets/img/main.banner.jpg";
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  computed: {
-    MainBanner() {
-      return MainBanner;
-    },
-  },
-});
-</script>
+<script setup></script>
 
 <style scoped>
 iframe {
@@ -41,5 +30,4 @@ iframe {
   min-height: 500px;
   margin: 0 auto;
 }
-/* Дополнительные стили, если нужно */
 </style>

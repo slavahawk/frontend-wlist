@@ -1,18 +1,30 @@
 <template>
-  <Banner id="banner" />
-  <Banner2 id="banner2" />
-  <Banner3 id="banner3" />
-  <Banner4 id="banner4" />
-  <Banner5 id="banner5" />
-  <Banner6 id="banner6" />
-  <Banner7 id="banner7" />
-  <Banner8 id="banner8" />
-  <Banner9 id="banner9" />
-  <PrisingWidget />
+  <Banner />
+  <Banner2 :id="MENU_HASH.ABOUT" />
+  <DeferredContent>
+    <Partners :id="MENU_HASH.PARTNER" />
+    <Banner4 />
+  </DeferredContent>
+  <DeferredContent>
+    <Banner5 />
+    <HowCan :id="MENU_HASH.HOW_CAN" />
+  </DeferredContent>
+  <DeferredContent>
+    <Plus :id="MENU_HASH.PLUS" />
+    <Interactive :id="MENU_HASH.INTERACTIVE" />
+  </DeferredContent>
+  <DeferredContent>
+    <Banner9 />
+    <PriceWidget :id="MENU_HASH.PRICES" />
+  </DeferredContent>
+  <DeferredContent>
+    <Questions />
+    <Save />
+  </DeferredContent>
 </template>
 
 <script setup lang="ts">
-import PrisingWidget from "~/components/PrisingWidget.vue";
+import { MENU_HASH } from "~/db/menu.js";
 </script>
 
 <style scoped></style>
