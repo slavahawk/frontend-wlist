@@ -7,8 +7,9 @@
         <span class="text-xl"> W-list</span>
         <span
           >© 2024 W-List <br />
-          ИП Крылов В.Ю. ИНН777777777</span
+          ИП Крылов В.Ю. 246315122011</span
         >
+        <a href="tel:+79082090500">8 (908) 209 05 00</a>
       </div>
       <div class="flex flex-col gap-2 text-white">
         <a href="">О нас</a>
