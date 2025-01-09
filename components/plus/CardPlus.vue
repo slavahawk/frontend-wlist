@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-2xl mb-2">{{ title }}</div>
+    <div class="text-2xl mb-4">{{ title }}</div>
     <div class="text-l">
       {{ text }}
     </div>

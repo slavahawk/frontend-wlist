@@ -1,7 +1,7 @@
 <template>
   <div class="pt-16 pl-4 pr-4 pb-16 max-w-7xl ml-auto mr-auto">
     <h2 class="text-center">
-      Интерактивные винные карты нового поколения Winechef
+      Интерактивные винные карты нового поколения W-List
     </h2>
     <h3 class="text-center">можно использовать для разных типов бизнеса</h3>
     <div class="flex gap-4 flex-wrap justify-between">

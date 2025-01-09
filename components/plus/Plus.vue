@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div class="pt-16 pb-16 max-w-7xl ml-auto mr-auto">
       <h2 class="text-center">Наши преимущества</h2>
-      <div class="flex gap-4 flex-wrap">
+      <div class="flex gap-4 flex-wrap justify-center">
         <div class="flex flex-col justify-center gap-4">
           <CardPlus
             class="card text-right"
