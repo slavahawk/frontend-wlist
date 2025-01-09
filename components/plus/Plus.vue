@@ -1,0 +1,46 @@
+<template>
+  <div class="bg-white">
+    <div class="pt-16 pb-16 max-w-7xl ml-auto mr-auto">
+      <h2 class="text-center">Наши преимущества</h2>
+      <div class="flex gap-4 flex-wrap">
+        <div class="flex flex-col justify-center gap-4">
+          <CardPlus
+            class="card text-right"
+            title="Интерактивный выбор вина"
+            text="Повысьте качество обслуживания с помощью увлекательной цифровой винной карты, которая содержит подробные описания вин."
+          />
+          <CardPlus
+            class="card text-right"
+            title="Настраиваемый дизайн"
+            text="Создайте уникальное и визуально привлекательное меню с настраиваемыми шаблонами, которые соответствуют брендингу вашего ресторана без особых усилий."
+          />
+        </div>
+        <div>
+          <img src="@/assets/img/ipad.webp" class="max-w-[400px]" alt="" />
+        </div>
+        <div class="flex flex-col justify-center gap-4">
+          <CardPlus
+            class="card text-left"
+            title="Интерактивные списки вин"
+            text="Погрузите своих гостей с помощью динамичных, простых в навигации цифровых винных меню."
+          />
+          <CardPlus
+            class="card text-left"
+            title="Синхронизация винной карты в режиме реального времени"
+            text="Обеспечьте точность ассортимента с помощью мгновенных обновлений."
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import CardPlus from "~/components/plus/CardPlus.vue";
+</script>
+
+<style scoped>
+.card {
+  max-width: 300px;
+}
+</style>

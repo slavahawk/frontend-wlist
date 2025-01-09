@@ -18,12 +18,15 @@
           />
         </div>
       </div>
+
+      <TBank />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import CardPrice from "./CardPrice.vue";
+import TBank from "~/components/PriceWidget/TBank.vue";
 
 const pricingPlans = [
   {
