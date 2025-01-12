@@ -1,80 +1,131 @@
 <template>
-  <form class="payform-tbank" name="payform-tbank" id="payform-tbank">
-    <input
-      class="payform-tbank-row"
-      type="hidden"
-      name="terminalkey"
-      value="25545396"
-    />
-    <input class="payform-tbank-row" type="hidden" name="frame" value="false" />
-    <input class="payform-tbank-row" type="hidden" name="language" value="ru" />
-    <input class="payform-tbank-row" type="hidden" name="receipt" value="" />
-    <input
-      class="payform-tbank-row"
-      type="hidden"
-      placeholder="Номер заказа"
-      name="order"
-    />
-    <input
-      class="payform-tbank-row"
-      type="text"
-      placeholder="ФИО плательщика"
-      name="name"
-    />
-    <input
-      class="payform-tbank-row"
-      type="email"
-      placeholder="E-mail"
-      name="email"
-    />
-    <input
-      class="payform-tbank-row"
-      type="tel"
-      placeholder="Контактный телефон"
-      name="phone"
-    />
-    <input
-      class="payform-tbank-row payform-tbank-btn"
-      type="submit"
-      value="Оплатить"
-    />
-  </form>
+  <Dialog v-model:visible="isVisible" modal header="Оплата">
+    <form
+      v-if="plan"
+      class="payform-tbank"
+      name="payform-tbank"
+      id="payform-tbank"
+    >
+      <input
+        class="payform-tbank-row"
+        type="hidden"
+        name="terminalkey"
+        value="1733828948168DEMO"
+      />
+      <input
+        class="payform-tbank-row"
+        type="hidden"
+        name="frame"
+        value="false"
+      />
+      <input
+        class="payform-tbank-row"
+        type="hidden"
+        name="language"
+        value="ru"
+      />
+      <input class="payform-tbank-row" type="hidden" name="receipt" value="" />
+      <input
+        class="payform-tbank-row"
+        type="hidden"
+        placeholder="Сумма заказа"
+        name="amount"
+        :value="plan.amount"
+        required
+      />
+      <input
+        class="payform-tbank-row"
+        type="hidden"
+        placeholder="Номер заказа"
+        name="order"
+      />
+      <input
+        class="payform-tbank-row"
+        type="text"
+        placeholder="Описание заказа"
+        name="description"
+        hidden
+      />
+      <input
+        class="payform-tbank-row"
+        type="text"
+        placeholder="ФИО плательщика"
+        name="name"
+      />
+      <input
+        class="payform-tbank-row"
+        type="email"
+        placeholder="E-mail"
+        name="email"
+      />
+      <input
+        class="payform-tbank-row"
+        type="tel"
+        placeholder="Контактный телефон"
+        name="phone"
+      />
+      <input
+        class="payform-tbank-row payform-tbank-btn"
+        type="submit"
+        value="Оплатить"
+        @click.prevent="payClick"
+      />
+    </form>
+  </Dialog>
 </template>
 
 <script setup lang="ts">
-onMounted(() => {
-  const TPF = document.getElementById("payform-tbank");
-  const amount = 10000000000;
+import type { Plan } from "~/types/pay";
 
-  TPF.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const { email, phone, receipt } = TPF;
+const props = defineProps<{
+  show: boolean;
+  plan: Plan | null;
+}>();
 
-    if (receipt) {
-      if (!email.value && !phone.value)
-        return alert("Поле E-mail или Phone не должно быть пустым");
+const emit = defineEmits<{
+  (e: "update:show", bol: boolean): void;
+}>();
 
-      TPF.receipt.value = JSON.stringify({
-        EmailCompany: "krylov_s10@mail.ru",
-        Taxation: "usn_income",
-        FfdVersion: "1.2",
-        Items: [
-          {
-            Name: "Оплата",
-            Price: Math.round(amount * 100),
-            Quantity: 1.0,
-            Amount: Math.round(amount * 100),
-            PaymentMethod: "full_prepayment",
-            PaymentObject: "service",
-            Tax: "none",
-            MeasurementUnit: "pc",
-          },
-        ],
-      });
-    }
-    pay(TPF);
-  });
+const isVisible = computed({
+  get() {
+    return props.show;
+  },
+  set(value) {
+    emit("update:show", value);
+  },
 });
+
+const payClick = () => {
+  const TPF = document.getElementById("payform-tbank");
+
+  const { email, phone, receipt } = TPF;
+
+  if (receipt) {
+    if (!email.value && !phone.value)
+      return alert("Поле E-mail или Phone не должно быть пустым");
+
+    console.log(TPF);
+
+    TPF.receipt.value = JSON.stringify({
+      EmailCompany: "mail@mail.com",
+      Taxation: "patent",
+      FfdVersion: "1.2",
+      Items: [
+        {
+          Name: props.plan?.title,
+          Price: Math.round(props.plan.amount * 100),
+          Quantity: 1.0,
+          Amount: Math.round(props.plan.amount * 100),
+          PaymentMethod: "full_prepayment",
+          PaymentObject: "service",
+          Tax: "none",
+          MeasurementUnit: "pc",
+        },
+      ],
+    });
+  }
+  pay(TPF);
+};
 </script>
 
 <style scoped>

@@ -15,14 +15,21 @@
           c помощью интерактивной винной карты W-List, которая сделает выбор
           вина для гостя понятным и удобным
         </p>
-        <Button size="large" label="Заказать онлайн консультацию" />
+        <Button
+          as="a"
+          :href="support"
+          target="_blank"
+          size="large"
+          label="Заказать онлайн консультацию"
+        />
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import MainBanner from "~/assets/img/main.banner.jpg";
+import { support } from "~/db/link";
 </script>
 
 <style scoped>
@@ -43,11 +50,13 @@ import MainBanner from "~/assets/img/main.banner.jpg";
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 
 .textBanner div {
   padding-top: 42px;
   padding-bottom: 42px;
   max-width: 540px;
+  z-index: 2;
 }
 </style>

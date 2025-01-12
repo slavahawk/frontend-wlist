@@ -15,7 +15,7 @@
         </span>
         <span class="text-surface-600 dark:text-surface-200">{{ period }}</span>
       </div>
-      <Button label="Получить доступ"></Button>
+      <Button @click="$emit('clickPay')" label="Получить доступ"></Button>
     </div>
     <Divider class="w-full bg-surface-200"></Divider>
     <ul

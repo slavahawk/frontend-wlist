@@ -7,13 +7,14 @@
         напитками для бизнеса любого типа и размера. Если вы не нашли свой тип
         бизнеса
       </p>
-      <Button label="Свяжитесь с нами" />
+      <Button as="a" :href="support" target="_blank" label="Свяжитесь с нами" />
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Bg from "assets/img/bg-call.png";
+import { support } from "~/db/link";
 </script>
 
 <style scoped>
