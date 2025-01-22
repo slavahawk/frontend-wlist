@@ -3,14 +3,14 @@
     <div class="pt-16 pb-16 max-w-7xl ml-auto mr-auto">
       <h2 class="text-center">Наши преимущества</h2>
       <div class="flex gap-4 flex-wrap justify-center">
-        <div class="flex flex-col justify-center gap-4">
+        <div class="flex flex-col justify-center gap-4 card-713 card-610">
           <CardPlus
-            class="card text-right"
+            class="card text-right text-713"
             title="Интерактивный выбор вина"
             text="Повысьте качество обслуживания с помощью увлекательной цифровой винной карты, которая содержит подробные описания вин."
           />
           <CardPlus
-            class="card text-right"
+            class="card text-right text-713"
             title="Настраиваемый дизайн"
             text="Создайте уникальное и визуально привлекательное меню с настраиваемыми шаблонами, которые соответствуют брендингу вашего ресторана без особых усилий."
           />
@@ -18,7 +18,7 @@
         <div>
           <img src="@/assets/img/ipad.webp" class="max-w-[400px]" alt="" />
         </div>
-        <div class="flex flex-col justify-center gap-4">
+        <div class="flex flex-col justify-center gap-4 card-1027 card-610">
           <CardPlus
             class="card text-left"
             title="Интерактивные списки вин"
@@ -42,5 +42,28 @@ import CardPlus from "~/components/plus/CardPlus.vue";
 <style scoped>
 .card {
   max-width: 300px;
+}
+
+@media (max-width: 1027px) {
+    .card-1027 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@media (max-width: 713px) {
+    .card-713 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .text-713 {
+      text-align: left;
+    }
+}
+
+@media (max-width: 610px) {
+  .card-610 {
+    display: flex;
+  }
 }
 </style>

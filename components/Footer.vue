@@ -25,4 +25,11 @@
 
 <script setup lang="ts"></script>
 
-<style scoped></style>
+<style scoped>
+div a,
+span {
+  @media (max-width: 350px) {
+        font-size: 0.875rem;
+    }
+ }
+</style>
