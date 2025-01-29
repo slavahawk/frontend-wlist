@@ -3,15 +3,36 @@
     <Header />
     <NuxtPage />
     <Footer />
+    <Button
+      class="support"
+      raised
+      icon="pi pi-telegram"
+      label="Служба поддержки"
+      @click="clickSupport"
+    />
   </div>
 </template>
 <script setup lang="ts">
 import Header from "~/components/Header.vue";
 
 useSeoMeta({
-  title: "W-List - Винная карта",
-  ogTitle: "W-List - Винная карта",
-  description: "This is my amazing site, let me tell you all about it.",
-  ogDescription: "This is my amazing site, let me tell you all about it.",
+  title: "W-List - Интерактивная винная карта",
+  ogTitle: "W-List - Интерактивная винная карта",
+  description:
+    "Интерактивная винная карта W-List упростит и сделает выбор вина увлекательным для ваших гостей, помогая им находить идеальные варианты и увеличивая интерес и заказы.",
+  ogDescription:
+    "Интерактивная винная карта W-List упростит и сделает выбор вина увлекательным для ваших гостей, помогая им находить идеальные варианты и увеличивая интерес и заказы.",
 });
+
+const clickSupport = () => {
+  window.open("https://t.me/slavahawk", "_blank");
+};
 </script>
+
+<style lang="scss">
+.support {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+}
+</style>
