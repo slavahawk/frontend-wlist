@@ -1,5 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
 import Aura from "@primevue/themes/aura";
 import { definePreset } from "@primeuix/styled";
 const Noir = definePreset(Aura, {
@@ -32,33 +30,12 @@ const Noir = definePreset(Aura, {
           focusColor: "#ffffff",
         },
       },
-      dark: {
-        primary: {
-          color: "{primary.50}",
-          contrastColor: "{primary.950}",
-          hoverColor: "{primary.100}",
-          activeColor: "{primary.200}",
-        },
-        highlight: {
-          background: "{primary.50}",
-          focusBackground: "{primary.300}",
-          color: "{primary.950}",
-          focusColor: "{primary.950}",
-        },
-      },
     },
   },
 });
 
 export default defineNuxtConfig({
-  app: {
-    head: {
-      script: [
-        { src: "https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js" },
-      ],
-    },
-  },
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: "2025-01-29",
   devtools: { enabled: true },
   modules: ["@primevue/nuxt-module", "@nuxtjs/tailwindcss", "@nuxt/image"],
   css: ["~/assets/main.scss"],
@@ -67,7 +44,7 @@ export default defineNuxtConfig({
       theme: {
         preset: Noir,
         options: {
-          darkModeSelector: ".app-dark",
+          darkModeSelector: false,
         },
       },
 

@@ -9,11 +9,11 @@
             title="Интерактивный выбор вина"
             text="Повысьте качество обслуживания с помощью увлекательной цифровой винной карты, которая содержит подробные описания вин."
           />
-          <CardPlus
-            class="card text-right text-713"
-            title="Настраиваемый дизайн"
-            text="Создайте уникальное и визуально привлекательное меню с настраиваемыми шаблонами, которые соответствуют брендингу вашего ресторана без особых усилий."
-          />
+          <!--          <CardPlus-->
+          <!--            class="card text-right text-713"-->
+          <!--            title="Настраиваемый дизайн"-->
+          <!--            text="Создайте уникальное и визуально привлекательное меню с настраиваемыми шаблонами, которые соответствуют брендингу вашего ресторана без особых усилий."-->
+          <!--          />-->
         </div>
         <div>
           <img src="@/assets/img/ipad.webp" class="max-w-[400px]" alt="" />
@@ -45,20 +45,20 @@ import CardPlus from "~/components/plus/CardPlus.vue";
 }
 
 @media (max-width: 1027px) {
-    .card-1027 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .card-1027 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
 @media (max-width: 713px) {
-    .card-713 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .text-713 {
-      text-align: left;
-    }
+  .card-713 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-713 {
+    text-align: left;
+  }
 }
 
 @media (max-width: 610px) {

@@ -5,15 +5,18 @@
     <Footer />
     <Button
       class="support"
+      as="a"
+      target="_blank"
+      :href="support"
       raised
       icon="pi pi-telegram"
       label="Служба поддержки"
-      @click="clickSupport"
     />
   </div>
 </template>
 <script setup lang="ts">
 import Header from "~/components/Header.vue";
+import { support } from "~/db/link";
 
 useSeoMeta({
   title: "W-List - Интерактивная винная карта",
@@ -23,10 +26,6 @@ useSeoMeta({
   ogDescription:
     "Интерактивная винная карта W-List упростит и сделает выбор вина увлекательным для ваших гостей, помогая им находить идеальные варианты и увеличивая интерес и заказы.",
 });
-
-const clickSupport = () => {
-  window.open("https://t.me/slavahawk", "_blank");
-};
 </script>
 
 <style lang="scss">

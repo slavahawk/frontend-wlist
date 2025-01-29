@@ -1,6 +1,5 @@
 export enum MENU_HASH {
   ABOUT = "about",
-  PARTNER = "partner",
   HOW_CAN = "how_can",
   PLUS = "plus",
   INTERACTIVE = "interactive",
@@ -12,10 +11,6 @@ export const menu = [
     label: "О Продукте",
     hash: MENU_HASH.ABOUT,
   },
-  // {
-  //   label: "Партнеры",
-  //   hash: MENU_HASH.PARTNER,
-  // },
   {
     label: "Как это работает",
     hash: MENU_HASH.HOW_CAN,

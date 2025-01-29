@@ -18,8 +18,20 @@
     </template>
     <template #end>
       <div class="flex items-center gap-2">
-        <Button label="Вход" @click="login" class="p-button-text" />
-        <Button label="Регистрация" @click="register" class="p-button" />
+        <Button
+          label="Вход"
+          as="a"
+          target="_blank"
+          :href="login"
+          class="p-button-text"
+        />
+        <Button
+          label="Регистрация"
+          as="a"
+          target="_blank"
+          :href="reg"
+          class="p-button"
+        />
       </div>
     </template>
   </Menubar>
@@ -28,13 +40,7 @@
 <script setup lang="ts">
 import Logo from "~/components/svg/Logo.vue";
 import { menu } from "~/db/menu";
-
-const login = () => {
-  window.open("https://admin.w-list.ru/auth/login");
-};
-const register = () => {
-  window.open("https://admin.w-list.ru/auth/reg");
-};
+import { login, reg } from "~/db/link.js";
 </script>
 
 <style scoped></style>
