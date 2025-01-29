@@ -1,10 +1,3 @@
-/* Utils */
-.clearfix:after {
-    content: ' ';
-    display: block;
-    clear: both;
-}
-
 .card {
     background: var(--surface-card);
     padding: 2rem;
@@ -12,13 +5,5 @@
 
     &:last-child {
         margin-bottom: 0;
-    }
-}
-
-.p-toast {
-    &.p-toast-top-right,
-    &.p-toast-top-left,
-    &.p-toast-top-center {
-        top: 100px;
     }
 }
