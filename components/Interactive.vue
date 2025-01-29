@@ -3,7 +3,7 @@
     <h2 class="text-center">
       Интерактивные винные карты нового поколения W-List
     </h2>
-    <h3 class="text-center">можно использовать для разных типов бизнеса</h3>
+    <h4 class="text-center">можно использовать для разных типов бизнеса</h4>
     <div class="flex gap-4 flex-wrap justify-between">
       <div class="max-w-72 ml-auto mr-auto">
         <img src="~/assets/img/rest1.svg" alt="" />

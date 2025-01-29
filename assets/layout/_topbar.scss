@@ -4,7 +4,6 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color-secondary);
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
@@ -59,7 +58,7 @@
                 }
 
                 span {
-                    font-weight: medium;
+                    font-weight: 500;
                     display: block;
                 }
             }

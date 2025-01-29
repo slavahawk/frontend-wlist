@@ -8,10 +8,12 @@
         label="Открыть"
         target="_blank"
         as="a"
-        href="https://demo.w-list.ru"
+        :href="demo"
         icon="pi pi-download"
       />
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { demo } from "~/db/link.js";
+</script>

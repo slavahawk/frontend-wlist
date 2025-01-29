@@ -15,7 +15,12 @@
         </span>
         <!--        <span class="text-surface-600 dark:text-surface-200">{{ period }}</span>-->
       </div>
-      <Button @click="$emit('clickPay')" label="Получить доступ"></Button>
+      <Button
+        as="a"
+        :href="support"
+        target="_blank"
+        label="Получить доступ"
+      ></Button>
     </div>
     <Divider class="w-full bg-surface-200"></Divider>
     <ul
@@ -55,4 +60,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { support } from "~/db/link.js";
+</script>

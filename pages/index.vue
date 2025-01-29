@@ -15,5 +15,3 @@
 import { MENU_HASH } from "~/db/menu.js";
 import PriceWidget from "~/components/PriceWidget/PriceWidget.vue";
 </script>
-
-<style scoped></style>
