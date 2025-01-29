@@ -31,7 +31,7 @@ useSeoMeta({
 });
 </script>
 
-<style lang="scss">
+<style>
 .support {
   position: fixed !important;
   bottom: 24px;
