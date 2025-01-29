@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   modules,
   css,
   primevue,
+  purgeCSS: {
+    enabled: false,
+  },
   vite: {
     css: {
       preprocessorOptions: {
