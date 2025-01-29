@@ -30,7 +30,7 @@ useSeoMeta({
 
 <style lang="scss">
 .support {
-  position: fixed;
+  position: fixed !important;
   bottom: 24px;
   right: 24px;
 }
