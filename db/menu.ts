@@ -12,10 +12,10 @@ export const menu = [
     label: "О Продукте",
     hash: MENU_HASH.ABOUT,
   },
-  {
-    label: "Партнеры",
-    hash: MENU_HASH.PARTNER,
-  },
+  // {
+  //   label: "Партнеры",
+  //   hash: MENU_HASH.PARTNER,
+  // },
   {
     label: "Как это работает",
     hash: MENU_HASH.HOW_CAN,

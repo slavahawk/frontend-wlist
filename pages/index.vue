@@ -1,23 +1,21 @@
 <template>
   <Banner />
-  <Banner2 :id="MENU_HASH.ABOUT" />
+  <!--  <Banner2 :id="MENU_HASH.ABOUT" />-->
   <DeferredContent>
-    <Partners :id="MENU_HASH.PARTNER" />
+    <!--    <Partners :id="MENU_HASH.PARTNER" />-->
     <Banner4 />
-  </DeferredContent>
-  <DeferredContent>
     <Banner5 />
+  </DeferredContent>
+  <DeferredContent>
     <HowCan :id="MENU_HASH.HOW_CAN" />
-  </DeferredContent>
-  <DeferredContent>
     <Plus :id="MENU_HASH.PLUS" />
+  </DeferredContent>
+  <DeferredContent>
     <Interactive :id="MENU_HASH.INTERACTIVE" />
-  </DeferredContent>
-  <DeferredContent>
     <Banner9 />
-    <PriceWidget :id="MENU_HASH.PRICES" />
   </DeferredContent>
   <DeferredContent>
+    <PriceWidget :id="MENU_HASH.PRICES" />
     <Questions />
     <Save />
   </DeferredContent>
