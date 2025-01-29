@@ -8,7 +8,7 @@
   >
     <div class="textBanner max-w-7xl ml-auto mr-auto w-full">
       <div class="text-left">
-        <h1 class="mb-4 text-white drop-shadow-xl">
+        <h1 class="mb-4 !text-white drop-shadow-xl">
           Увеличим продажи вина в вашем бизнесе
         </h1>
         <p class="mb-6 text-white drop-shadow-xl">

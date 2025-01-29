@@ -1,7 +1,7 @@
 <template>
   <div class="bg" :style="{ backgroundImage: `url(${Bg})` }">
     <div class="bg-text">
-      <h2 class="text-white">Не нашли свой бизнес?</h2>
+      <h2 class="!text-white">Не нашли свой бизнес?</h2>
       <p class="text-white">
         команда W-List создает решения в области автоматизации торговли
         напитками для бизнеса любого типа и размера. Если вы не нашли свой тип

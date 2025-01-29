@@ -1,7 +1,8 @@
 import { primevue } from "./app/primevue";
+import tailwindcss from "@tailwindcss/vite";
 
-const modules = ["@primevue/nuxt-module", "@nuxtjs/tailwindcss", "@nuxt/image"];
-const css = ["~/assets/main.scss"];
+const modules = ["@primevue/nuxt-module", "@nuxt/image"];
+const css = ["~/assets/main.scss", "~/assets/main.css"];
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-01-29",
@@ -9,10 +10,8 @@ export default defineNuxtConfig({
   modules,
   css,
   primevue,
-  purgeCSS: {
-    enabled: false,
-  },
   vite: {
+    plugins: [tailwindcss()],
     css: {
       preprocessorOptions: {
         scss: {
