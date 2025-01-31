@@ -17,7 +17,7 @@
       </div>
       <Button
         as="a"
-        :href="support"
+        :href="reg"
         target="_blank"
         label="Получить доступ"
       ></Button>
@@ -61,5 +61,5 @@
 </template>
 
 <script setup lang="ts">
-import { support } from "~/db/link.js";
+import { reg } from "~/db/link.js";
 </script>
