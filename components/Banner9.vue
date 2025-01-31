@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import Bg from "assets/img/bg-call.png";
+import Bg from "assets/img/bg-call1.png";
 import { support } from "~/db/link";
 </script>
 

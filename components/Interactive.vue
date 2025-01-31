@@ -5,7 +5,7 @@
     </h2>
     <h4 class="text-center">можно использовать для разных типов бизнеса</h4>
     <div class="flex gap-4 flex-wrap justify-between">
-      <div class="max-w-72 ml-auto mr-auto">
+      <div class="max-w-72 ml-auto mr-auto ">
         <img src="~/assets/img/rest1.svg" alt="" />
         <h3>Ресторанам</h3>
         <p>
@@ -15,7 +15,7 @@
       </div>
 
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <img src="~/assets/img/rest2.svg" alt="" />
         <h3>Отелям</h3>
         <p>
           W-List — незаменимый помощник для отельеров. В отличие от обычных
@@ -24,7 +24,7 @@
       </div>
 
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <img src="~/assets/img/rest3.svg" alt="" />
         <h3>Круизным лайнерам</h3>
         <p>
           Интерактивная винная карта предоставит рекомендации к блюдам и сможет
@@ -33,7 +33,7 @@
       </div>
 
       <div class="max-w-72 ml-auto mr-auto">
-        <img src="~/assets/img/rest1.svg" alt="" />
+        <img src="~/assets/img/rest4.svg" alt="" />
         <h3>Алкогольным бутикам</h3>
         <p>
           W-List упростит работу сомелье, став отличным инструментом для
@@ -48,4 +48,9 @@
 
 <style scoped>
 /* Дополнительные стили, если нужно */
+img {
+  height: 200px;
+  width: 220px;
+  object-fit: cover;
+}
 </style>

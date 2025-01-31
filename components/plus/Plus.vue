@@ -15,8 +15,8 @@
             text="Повысьте качество обслуживания с помощью увлекательной цифровой винной карты, которая содержит подробные описания вин."
           />
         </div>
-        <div>
-          <img src="@/assets/img/ipad.webp" class="max-w-[400px]" alt="" />
+        <div class="mt-5">
+          <img src="@/assets/img/iphone.png" class="max-w-[400px]" alt="" />
         </div>
         <div class="flex flex-col justify-center gap-4 card-1027 card-610">
           <CardPlus
