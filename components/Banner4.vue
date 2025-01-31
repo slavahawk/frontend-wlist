@@ -17,7 +17,7 @@
         </p>
       </div>
       <div>
-        <img src="~/assets/img/banner3.webp" alt="" />
+        <img src="~/assets/img/banner3.png" alt="" />
       </div>
     </div>
   </div>
@@ -27,4 +27,8 @@
 
 <style scoped>
 /* Дополнительные стили, если нужно */
+div img {
+  display: flex;
+  width: 500px;
+}
 </style>
