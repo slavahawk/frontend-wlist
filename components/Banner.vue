@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import MainBanner from "~/assets/img/main.banner.png";
+import MainBanner from "~/assets/img/main.banner.jpg";
 import { support } from "~/db/link";
 </script>
 
