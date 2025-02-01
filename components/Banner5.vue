@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div
-      class="pt-16 pl-4 pr-4 pb-16 max-w-7xl ml-auto mr-auto flex justify-between items-center flex-wrap gap-4"
+      class="py-16 px-4 max-w-7xl ml-auto mr-auto flex justify-center items-center flex-wrap gap-4"
     >
       <div class="max-w-xl mx-auto">
         <img src="~/assets/img/banner4.png" alt="" />
@@ -33,6 +33,4 @@
 
 <script setup></script>
 
-<style scoped>
-/* Дополнительные стили, если нужно */
-</style>
+<style scoped></style>
