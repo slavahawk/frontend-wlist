@@ -13,5 +13,24 @@
 
 <script setup lang="ts">
 import { MENU_HASH } from "~/db/menu.js";
-import PriceWidget from "~/components/PriceWidget/PriceWidget.vue";
+
+// Используйте defineAsyncComponent для отложенной загрузки
+import { defineAsyncComponent } from "vue";
+
+const Banner = defineAsyncComponent(() => import("~/components/Banner.vue"));
+const Banner4 = defineAsyncComponent(() => import("~/components/Banner4.vue"));
+const Banner5 = defineAsyncComponent(() => import("~/components/Banner5.vue"));
+const HowCan = defineAsyncComponent(() => import("~/components/HowCan.vue"));
+const Plus = defineAsyncComponent(() => import("~/components/plus/Plus.vue"));
+const Interactive = defineAsyncComponent(
+  () => import("~/components/Interactive.vue"),
+);
+const Banner9 = defineAsyncComponent(() => import("~/components/Banner9.vue"));
+const PriceWidget = defineAsyncComponent(
+  () => import("~/components/PriceWidget/PriceWidget.vue"),
+);
+const Questions = defineAsyncComponent(
+  () => import("~/components/Questions.vue"),
+);
+const Save = defineAsyncComponent(() => import("~/components/Save.vue"));
 </script>
