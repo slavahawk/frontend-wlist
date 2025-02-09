@@ -16,8 +16,10 @@
       <!--        <a href="">Наш блог</a>-->
       <!--      </div>-->
       <div class="flex flex-col gap-2 text-white">
-        <a href="">Лицензионный договор</a>
-        <a href="">Политика конфиденциальности</a>
+        <a href="https://files.w-list.ru/free_contract.pdf" target="_blank"
+          >Лицензионный договор</a
+        >
+        <!--        <a href="">Политика конфиденциальности</a>-->
       </div>
     </div>
   </footer>
