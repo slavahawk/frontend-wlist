@@ -18,6 +18,8 @@
 import Header from "~/components/Header.vue";
 import { support } from "~/db/link";
 
+import Logo from "@/assets/img/logo.svg";
+
 useSeoMeta({
   title: "W-List - Интерактивная винная карта",
   ogTitle: "W-List - Винная карта, которая делает выбор легким и увлекательным",
@@ -25,7 +27,7 @@ useSeoMeta({
     "Интерактивная винная карта W-List помогает вашим гостям находить идеальные варианты вина, увеличивая интерес и заказы. Упростите выбор вина с W-List.",
   ogDescription:
     "Откройте для себя идеальные сочетания вина с интерактивной винной картой W-List. Увлекательный выбор для ваших гостей.",
-  ogImage: "@/assets/img/logo.svg",
+  ogImage: Logo,
   ogType: "website",
   ogUrl: "https://w-list.ru/",
   keywords:
@@ -34,7 +36,7 @@ useSeoMeta({
   twitterTitle: "W-List - Упростите выбор вина",
   twitterDescription:
     "С интерактивной винной картой W-List ваши гости найдут идеальное вино!",
-  twitterImage: "@/assets/img/logo.svg",
+  twitterImage: Logo,
 });
 </script>
 
