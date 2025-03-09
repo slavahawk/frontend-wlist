@@ -20,4 +20,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  plugins: [
+    "~/plugins/yandex-metrika.ts", // добавьте путь к вашему плагину
+  ],
 });
