@@ -31,6 +31,11 @@ export default defineNuxtConfig({
           type: "image/x-icon", // Или "image/ico"
           href: "/favicon.ico", // Укажите путь к вашему favicon
         },
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: "/favicon.svg",
+        },
         // 16x16 иконка для браузеров
         {
           rel: "icon",
