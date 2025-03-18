@@ -72,6 +72,12 @@ export default defineNuxtConfig({
         },
         // Поместите другие размеры иконок, если необходимо
       ],
+      script: [
+        {
+          src: "https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js",
+          defer: true, // использовать атрибут defer для загрузки скрипта
+        },
+      ],
     },
   },
 });
