@@ -17,6 +17,7 @@
           им находить для себя идеальные варианты
         </p>
         <Button
+      style="background: var(--surface-ground); color: #000;"
           as="a"
           :href="support"
           target="_blank"
@@ -59,5 +60,6 @@ import { support } from "~/db/link";
   padding-bottom: 42px;
   max-width: 540px;
   z-index: 2;
+  padding: 0 14px;
 }
 </style>
