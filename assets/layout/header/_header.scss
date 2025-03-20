@@ -24,7 +24,7 @@
   &__logo {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 4px;
     max-width: 100%;
   }
 
@@ -32,7 +32,7 @@
     margin: auto;
     padding: 0 20px;
 
-    @media (max-width: 840px) {
+    @media (max-width: 870px) {
       position: absolute;
       display: none;
       top: 100%;
@@ -53,16 +53,28 @@
       background-color: var(--surface-ground);
     }
 
-    @media (min-width: 840px) {
+    @media (min-width: 870px) {
       &-list {
         display: flex;
         align-items: center;
         column-gap: 15px;
+
       }
     }
 
     &.active {
       display: block;
     }
+  }
+}
+
+.burger-button {
+  display: none !important;
+}
+
+
+@media (max-width: 870px) {
+  .burger-button {
+    display: block !important;
   }
 }
