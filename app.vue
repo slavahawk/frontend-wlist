@@ -12,6 +12,7 @@
       icon="pi pi-telegram"
       label="Служба поддержки"
     />
+    <TBank />
   </div>
 </template>
 <script setup lang="ts">
@@ -19,6 +20,7 @@ import Header from "~/components/Header.vue";
 import { support } from "~/db/link";
 
 import Logo from "@/assets/img/logo.svg";
+import TBank from "~/components/PriceWidget/TBank.vue";
 
 useSeoMeta({
   title: "W-List - Интерактивная винная карта",
