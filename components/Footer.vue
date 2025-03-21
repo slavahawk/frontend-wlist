@@ -20,6 +20,12 @@
           >Лицензионный договор</a
         >
         <!--        <a href="">Политика конфиденциальности</a>-->
+        <a href="https://files.w-list.ru/cookies.pdf" target="_blank"
+          >Политика cookies</a
+        >
+        <a href="https://files.w-list.ru/soglasie_na_obrabotku_personalnyh_dannyh.pdf" target="_blank"
+          >Политика обработки персональных данных</a
+        >
       </div>
     </div>
   </footer>
