@@ -1,7 +1,7 @@
 <template>
   <footer class="footer bg-black">
     <div
-      class="pt-16 px-4 pb-16 max-w-7xl mx-auto flex justify-between items-center gap-2"
+      class="pt-16 px-4 pb-16 max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2 footer__document"
     >
       <div class="text-white flex flex-col gap-2">
         <span class="text-xl"> W-list</span>
@@ -38,6 +38,12 @@ div a,
 span {
   @media (max-width: 350px) {
     font-size: 0.875rem;
+  }
+}
+
+.footer__document {
+  @media (max-width: 560px) {
+    column-gap: 20px;
   }
 }
 </style>

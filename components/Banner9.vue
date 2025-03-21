@@ -35,6 +35,7 @@ import { support } from "~/db/link";
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .bg:after {
