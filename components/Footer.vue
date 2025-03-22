@@ -11,19 +11,16 @@
         >
         <a href="tel:+79082090500">8 (908) 209 05 00</a>
       </div>
-      <!--      <div class="flex flex-col gap-2 text-white">-->
-      <!--        <a href="">О нас</a>-->
-      <!--        <a href="">Наш блог</a>-->
-      <!--      </div>-->
       <div class="flex flex-col gap-2 text-white">
         <a href="https://files.w-list.ru/free_contract.pdf" target="_blank"
           >Лицензионный договор</a
         >
-        <!--        <a href="">Политика конфиденциальности</a>-->
         <a href="https://files.w-list.ru/cookies.pdf" target="_blank"
           >Политика cookies</a
         >
-        <a href="https://files.w-list.ru/soglasie_na_obrabotku_personalnyh_dannyh.pdf" target="_blank"
+        <a
+          href="https://files.w-list.ru/soglasie_na_obrabotku_personalnyh_dannyh.pdf"
+          target="_blank"
           >Политика обработки персональных данных</a
         >
       </div>
@@ -39,6 +36,10 @@ span {
   @media (max-width: 350px) {
     font-size: 0.875rem;
   }
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .footer__document {
